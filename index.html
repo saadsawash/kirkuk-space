@@ -1,0 +1,1060 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <!-- METADATA -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Kirkuk Space for Innovation and Entrepreneurship">
+    <meta name="keywords" content="co-working space, courses, innovation, entrepreneurship, startup, iraq, kirkuk, programming, design, development, computers">
+
+    <!-- TITLE -->
+    <title>Welcome to KSIE</title>
+
+    <!-- FAVICONS -->
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/img/landing/conference/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/img/landing/conference/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/img/landing/conference/favicon/favicon-16x16.png">
+    <link rel="manifest" href="assets/img/landing/conference/favicon/site.webmanifest">
+
+    <!-- WEBSITE THEME MODE -->
+    <script>
+      let mode = window.localStorage.getItem('mode'),
+          root = document.getElementsByTagName('html')[0];
+      if (mode !== undefined && mode === 'dark') {
+        root.classList.add('dark-mode');
+      } else {
+        root.classList.remove('dark-mode');
+      }
+    </script>
+    
+    <!-- GOOGLE FONTS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com/">
+    <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&amp;display=swap" rel="stylesheet" id="google-font">
+    
+    <!-- VENDOR STYLES -->
+    <link rel="stylesheet" media="screen" href="assets/vendor/swiper/swiper-bundle.min.css">
+    <link rel="stylesheet" media="screen" href="assets/vendor/simplebar/dist/simplebar.min.css">
+    <link rel="stylesheet" media="screen" href="assets/vendor/lightgallery/css/lightgallery-bundle.min.css">
+
+    <!-- MAIN THEME + BOOTSTRAP -->
+    <link rel="stylesheet" media="screen" href="assets/css/theme.min.css">
+    
+    <!-- CUSTOM COLORS -->
+    <style id="customizer-styles">
+      :root{
+        --ar-primary:#3f7fca;
+        --ar-primary-rgb:63,127,202;
+        --ar-link-color:#3f7fca;
+        --ar-link-hover-color:#2666b1;
+      }
+      .btn-primary{
+        --ar-btn-bg:#3f7fca;
+        --ar-btn-border-color:#3f7fca;
+        --ar-btn-hover-bg:#2666b1;
+        --ar-btn-hover-border-color:#2666b1;
+        --ar-btn-active-bg:#2666b1;
+        --ar-btn-active-border-color:#2666b1;
+        --ar-btn-disabled-bg:#3f7fca;
+        --ar-btn-disabled-border-color:#3f7fca;
+      }
+      .btn-outline-primary{
+        --ar-btn-color:#3f7fca;
+        --ar-btn-border-color:#3f7fca;
+        --ar-btn-hover-bg:#3f7fca;
+        --ar-btn-hover-border-color:#3f7fca;
+        --ar-btn-active-bg:#3f7fca;
+        --ar-btn-active-border-color:#3f7fca;
+        --ar-btn-disabled-color:#3f7fca;
+        --ar-btn-disabled-border-color:#3f7fca;
+      }
+    </style>
+  </head>
+
+  <body>
+    <!-- Page wrapper-->
+    <main class="page-wrapper">
+      <div class="dark-mode">
+        <!-- HEADER (NAVBAR) -->
+        <header class="navbar navbar-expand-lg fixed-top">
+          <div class="container">
+            <!-- BRANDING -->
+            <a class="navbar-brand pe-sm-3" href="/">
+              <span class="text-primary flex-shrink-0 me-2">
+                <img src="assets/img/logos/logo_emblem_white.svg" alt="" width="32">      
+              </span>
+              KirkukSpace
+            </a>
+            <!-- THEME TOGGLER -->
+            <div class="form-check form-switch mode-switch order-lg-2 me-3 me-lg-4 ms-auto" data-bs-toggle="mode">
+              <input class="form-check-input" type="checkbox" id="theme-mode">
+              <label class="form-check-label" for="theme-mode">
+                <i class="ai-sun fs-lg"></i>
+              </label>
+              <label class="form-check-label" for="theme-mode">
+                <i class="ai-moon fs-lg"></i>
+              </label>
+            </div>
+            <!-- HAMBURGER MENU BUTTON -->
+            <button class="navbar-toggler ms-sm-3" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <!-- NAVIGATION MENU -->
+            <nav class="collapse navbar-collapse" id="navbarNav">
+              <ul class="navbar-nav navbar-nav-scroll me-auto" style="--ar-scroll-height: 520px;">
+                <li class="nav-item">
+                  <a class="nav-link" href="/">Home</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#services-section" data-scroll data-scroll-offset="120">Services</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#courses-section" data-scroll data-scroll-offset="120">Courses</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#staff-section" data-scroll data-scroll-offset="120">Staff</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#contact-section" data-scroll data-scroll-offset="120">Contact</a>
+                </li>
+              </ul>
+            </nav>
+          </div>
+        </header>
+      </div>
+      
+      <!-- HERO SECTION -->
+      <section class="bg-dark dark-mode position-relative py-5">
+        <div class="position-absolute top-0 start-0 w-100 h-100" style="background-image: url(assets/img/landing/conference/noise.png); mix-blend-mode: soft-light; opacity: 12%"></div>
+        <div class="container position-relative zindex-2 py-md-3 py-lg-4 py-xl-5">
+          <div class="row align-items-center justify-content-center pt-5 pb-2 pb-sm-3 mt-sm-4">
+            <div class="col-10 col-sm-8 col-md-6 col-xl-5 offset-lg-1 offset-xl-2 order-md-2 pb-3 pb-md-0 mb-3 mb-sm-4 mb-md-0">
+              <div class="swiper" data-swiper-options='{
+                "effect": "creative",
+                "loop": true,
+                "allowTouchMove": false,
+                "speed": 450,
+                "autoplay": {
+                  "delay": 6000,
+                  "disableOnInteraction": false
+                },
+                "creativeEffect": {
+                  "prev": {
+                    "shadow": true,
+                    "translate": ["-20%", 0, -1]
+                  },
+                  "next": {
+                    "translate": ["100%", 0, 0]
+                  }
+                },
+                "thumbnails": {
+                  "el": "#thumbnails",
+                  "images": [
+                    "assets/img/landing/conference/hero/th01.jpg",
+                    "assets/img/landing/conference/hero/th02.jpg",
+                    "assets/img/landing/conference/hero/th03.jpg"
+                  ]
+                }
+              }' style="border-radius: 50%; border-bottom-right-radius: 0;">
+                <div class="swiper-wrapper">
+                  <!-- CAROUSEL ITEM -->
+                  <div class="swiper-slide">
+                    <div class="position-relative overflow-hidden" style="border-bottom-left-radius: 50%; border-top-left-radius: 50%;">
+                      <img src="assets/img/landing/conference/hero/01.jpg" alt="Image">
+                      <div class="d-flex align-items-end justify-content-end position-absolute start-0 bottom-0 w-100" style="height: 215px; background: linear-gradient(0deg, rgba(15, 17, 21, 0.8) 0%, rgba(16, 20, 24, 0) 100%);">
+                        <div class="text-end pe-4 pb-4">
+                          <h3 class="h5 mb-1">Robotics Course</h3>
+                          <p class="fs-sm mb-0">Muntaser Sharief</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- CAROUSEL ITEM -->
+                  <div class="swiper-slide">
+                    <div class="position-relative overflow-hidden" style="border-bottom-left-radius: 50%; border-top-left-radius: 50%;">
+                      <img src="assets/img/landing/conference/hero/02.jpg" alt="Image">
+                      <div class="d-flex align-items-end justify-content-end position-absolute start-0 bottom-0 w-100" style="height: 215px; background: linear-gradient(0deg, rgba(15, 17, 21, 0.8) 0%, rgba(16, 20, 24, 0) 100%);">
+                        <div class="text-end pe-4 pb-4">
+                          <h3 class="h5 mb-1">Graphic Design Course</h3>
+                          <p class="fs-sm mb-0">Dara Othman</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- CAROUSEL ITEM -->
+                  <div class="swiper-slide">
+                    <div class="position-relative overflow-hidden" style="border-bottom-left-radius: 50%; border-top-left-radius: 50%;">
+                      <img src="assets/img/landing/conference/hero/03.jpg" alt="Image">
+                      <div class="d-flex align-items-end justify-content-end position-absolute start-0 bottom-0 w-100" style="height: 215px; background: linear-gradient(0deg, rgba(15, 17, 21, 0.8) 0%, rgba(16, 20, 24, 0) 100%);">
+                        <div class="text-end pe-4 pb-4">
+                          <h3 class="h5 mb-1">Programming Course</h3>
+                          <p class="fs-sm mb-0">Saad Sawash</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-thumbnails swiper-thumbnails-circle flex-nowrap justify-content-end pt-4" id="thumbnails"></div>
+            </div>
+            <div class="col-sm-10 col-md-6 col-lg-5 order-md-1">
+              <h1 class="display-3 text-uppercase d-none d-lg-block pb-3 mb-4 text-center">
+                Welcome to KSIE
+              </h1>
+              <h1 class="display-5 text-uppercase d-lg-none pb-1 pb-sm-2 text-center">
+                Welcome to KSIE
+              </h1>
+              <div class="d-sm-flex justify-content-around">
+                <a class="btn btn-lg btn-primary w-100 w-md-auto mb-3 mb-sm-0" href="#services-section" data-scroll data-scroll-offset="120">
+                  Our Services
+                  <i class="ai-arrow-down ms-2 me-n2"></i>
+                </a>
+                <a class="btn btn-lg btn-outline-light w-100 w-md-auto" href="#courses-section" data-scroll data-scroll-offset="120">
+                  <i class="ai-book me-2 ms-n2"></i>
+                  Our Courses
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- DAILY QUOTE SECTION -->
+      <section class="bg-secondary position-relative py-4 py-md-5">
+        <div class="container position-relative zindex-2">
+          <figure class="text-center">
+            <blockquote class="blockquote" id="dailyQuote">
+              <p>
+                Loading Daily Quote
+              </p>
+            </blockquote>
+            <figcaption class="blockquote-footer" id="dailyQuoteAuthor">...</figcaption>
+          </figure>
+        </div>
+      </section>
+
+      <!-- SERVICES SECTION -->
+      <section class="container pt-5 mt-xl-3 mt-xxl-5" id="services-section">
+        <div class="row pt-1 pt-sm-3 pt-md-4 pt-lg-5 mt-xl-2">
+          <div class="col-lg-4">
+            <h2 class="h1 pb-1 pb-sm-2 mb-4">What Services Do We Provide?</h2>
+          </div>
+          <div class="col-lg-8 col-xl-7 offset-xl-1">
+            <div class="ps-lg-4 ps-xl-0">
+              <div data-simplebar>
+                <ul class="nav nav-tabs flex-nowrap mb-2" role="tablist">
+                  <li class="nav-item">
+                    <a class="nav-link text-nowrap px-4 px-lg-3 px-xl-4 active" href="#courses" data-bs-toggle="tab" role="tab">Courses</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link text-nowrap px-4 px-lg-3 px-xl-4" href="#e-services" data-bs-toggle="tab" role="tab">Entrepreneurship Services</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link text-nowrap px-4 px-lg-3 px-xl-4" href="#co-working" data-bs-toggle="tab" role="tab">Co-Working Space</a>
+                  </li>
+                </ul>
+              </div>
+              <div class="tab-content py-2 pb-md-0 pt-sm-3 pt-lg-4 mb-4 mb-md-5">
+                <div class="tab-pane fade show active" id="courses" role="tabpanel">
+                  <p class="fs-xl mb-4">
+                    We offer a wide range of courses to equip young adults and recent university graduates with the skills necessary to secure employment
+                    or establish their own start-up ventures.
+                  </p>
+                  <ul class="fs-xl mb-0">
+                    <li class="mb-1">Basic Computer Skills (Windows OS)</li>
+                    <li class="mb-1">Microsoft Office Suite (Word, Excel, Powerpoint)</li>
+                    <li class="mb-1">Graphic Design</li>
+                    <li class="mb-1">AutoCAD</li>
+                    <li class="mb-1">Autodesk Revit</li>
+                    <li class="mb-1">Coding and Robotics for Children</li>
+                    <li class="mb-1">Introduction to Programming in C++</li>
+                    <li class="mb-1">Introduction to Programming in Python</li>
+                  </ul>
+                </div>
+                <div class="tab-pane fade" id="e-services" role="tabpanel">
+                  <p class="fs-xl mb-4">
+                    Our Entrepreneurship services aims to aid small businesses in their growth by providing a range of services including training, workshops,
+                    and seminars. Additionally, we offer research and advisory services to assist small businesses in making informed decisions.
+                    Our workshops also promote entrepreneurship as a viable career option for students. Some of the workshops provided in this section include:
+                  </p>
+                  <ul class="fs-xl mb-0">
+                    <li class="mb-1">Start Your Business</li>
+                    <li class="mb-1">Get to Know the Business and Institutions</li>
+                    <li class="mb-1">The basic elementary of any project</li>
+                    <li class="mb-1">Project as a system</li>
+                    <li class="mb-1">The successful project</li>
+                    <li class="mb-1">Getting to know customer</li>
+                    <li class="mb-1">Defining the problem</li>
+                    <li class="mb-1">Design thinking</li>
+                    <li class="mb-1">Finance statement</li>
+                    <li class="mb-1">Marketing</li>
+                    <li class="mb-1">Go to market strategy</li>
+                  </ul>
+                </div>
+                <div class="tab-pane fade" id="co-working" role="tabpanel">
+                  <p class="fs-xl mb-4">
+                    The Co-working space section aims to assist youth and entrepreneurs in their business ventures by providing high-quality workspaces,
+                    trainings, and workshops, allowing them to concentrate, communication, and collaborate effectively, thereby improving their performance.
+                    Additionally, this section offers reasonably priced, fully serviced workspaces to the market, with the goal of jumpstarting new businesses.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      
+      <!-- STAFF MEMBERS SECTION -->
+      <section class="container py-5 mb-lg-3 mb-xl-4 mt-xl-3 my-xxl-5" id="staff-section">
+        <h2 class="h1 text-center pt-2 pt-sm-3 pt-md-4 pt-lg-5 mt-xl-2 mb-5">Our Staff</h2>
+        <div class="mb-4 mb-lg-5 pb-4 px-3" data-simplebar>
+          <div class="row row-cols-lg-4 flex-nowrap flex-lg-wrap gy-lg-5 mx-n3">
+            <div class="col">
+              <a class="d-block text-center text-decoration-none" href="javascript:void(0);" data-bs-toggle="modal" data-bs-target="#modal-dalya" style="min-width: 210px;">
+                <img class="rounded-circle" src="assets/img/avatar/36.jpg" width="120" alt="Avatar">
+                <h3 class="h5 pt-4 mb-1">Dalya Hunar Najeeb</h3>
+                <p class="text-muted mb-0">Co-Founder, Director &amp; Trainer</p>
+              </a>
+            </div>
+            <div class="col">
+              <a class="d-block text-center text-decoration-none" href="javascript:void(0);" data-bs-toggle="modal" data-bs-target="#modal-hallo" style="min-width: 210px;">
+                <img class="rounded-circle" src="assets/img/avatar/36.jpg" width="120" alt="Avatar">
+                <h3 class="h5 pt-4 mb-1">Hallo Ali Hama</h3>
+                <p class="text-muted mb-0">Co-Founder &amp; Trainer</p>
+              </a>
+            </div>
+            <div class="col">
+              <a class="d-block text-center text-decoration-none" href="javascript:void(0);" data-bs-toggle="modal" data-bs-target="#modal-farman" style="min-width: 210px;">
+                <img class="rounded-circle" src="assets/img/avatar/36.jpg" width="120" alt="Avatar">
+                <h3 class="h5 pt-4 mb-1">Farman Najm Satar</h3>
+                <p class="text-muted mb-0">Trainer</p>
+              </a>
+            </div>
+            <div class="col">
+              <a class="d-block text-center text-decoration-none" href="javascript:void(0);" data-bs-toggle="modal" data-bs-target="#modal-ismael" style="min-width: 210px;">
+                <img class="rounded-circle" src="assets/img/avatar/36.jpg" width="120" alt="Avatar">
+                <h3 class="h5 pt-4 mb-1">Ismael Majeed Ismael</h3>
+                <p class="text-muted mb-0">Trainer</p>
+              </a>
+            </div>
+            <div class="col">
+              <a class="d-block text-center text-decoration-none" href="javascript:void(0);" data-bs-toggle="modal" data-bs-target="#modal-rebean" style="min-width: 210px;">
+                <img class="rounded-circle" src="assets/img/avatar/36.jpg" width="120" alt="Avatar">
+                <h3 class="h5 pt-4 mb-1">Rebean Al Sliffani</h3>
+                <p class="text-muted mb-0">Trainer</p>
+              </a>
+            </div>
+            <div class="col">
+              <a class="d-block text-center text-decoration-none" href="javascript:void(0);" data-bs-toggle="modal" data-bs-target="#modal-saad" style="min-width: 210px;">
+                <img class="rounded-circle" src="assets/img/avatar/36.jpg" width="120" alt="Avatar">
+                <h3 class="h5 pt-4 mb-1">Saad Sawash Mahmood</h3>
+                <p class="text-muted mb-0">Trainer</p>
+              </a>
+            </div>
+            <div class="col">
+              <a class="d-block text-center text-decoration-none" href="javascript:void(0);" data-bs-toggle="modal" data-bs-target="#modal-dara" style="min-width: 210px;">
+                <img class="rounded-circle" src="assets/img/avatar/36.jpg" width="120" alt="Avatar">
+                <h3 class="h5 pt-4 mb-1">Dara Othman Hama</h3>
+                <p class="text-muted mb-0">Trainer</p>
+              </a>
+            </div>
+            <div class="col">
+              <a class="d-block text-center text-decoration-none" href="javascript:void(0);" data-bs-toggle="modal" data-bs-target="#modal-faridon" style="min-width: 210px;">
+                <img class="rounded-circle" src="assets/img/avatar/36.jpg" width="120" alt="Avatar">
+                <h3 class="h5 pt-4 mb-1">Faridon Hadi</h3>
+                <p class="text-muted mb-0">Trainer</p>
+              </a>
+            </div>
+            <div class="col">
+              <a class="d-block text-center text-decoration-none" href="javascript:void(0);" data-bs-toggle="modal" data-bs-target="#modal-saleh" style="min-width: 210px;">
+                <img class="rounded-circle" src="assets/img/avatar/36.jpg" width="120" alt="Avatar">
+                <h3 class="h5 pt-4 mb-1">Salah Habeeb Najeeb</h3>
+                <p class="text-muted mb-0">Trainer</p>
+              </a>
+            </div>
+            <div class="col">
+              <a class="d-block text-center text-decoration-none" href="javascript:void(0);" data-bs-toggle="modal" data-bs-target="#modal-muntaser" style="min-width: 210px;">
+                <img class="rounded-circle" src="assets/img/avatar/36.jpg" width="120" alt="Avatar">
+                <h3 class="h5 pt-4 mb-1">Muntaser Sharief</h3>
+                <p class="text-muted mb-0">Trainer</p>
+              </a>
+            </div>
+            <div class="col">
+              <a class="d-block text-center text-decoration-none" href="javascript:void(0);" data-bs-toggle="modal" data-bs-target="#modal-maral" style="min-width: 210px;">
+                <img class="rounded-circle" src="assets/img/avatar/36.jpg" width="120" alt="Avatar">
+                <h3 class="h5 pt-4 mb-1">Maral Salah Shukri</h3>
+                <p class="text-muted mb-0">Trainer</p>
+              </a>
+            </div>
+            <div class="col">
+              <a class="d-block text-center text-decoration-none" href="javascript:void(0);" data-bs-toggle="modal" data-bs-target="#modal-chia" style="min-width: 210px;">
+                <img class="rounded-circle" src="assets/img/avatar/36.jpg" width="120" alt="Avatar">
+                <h3 class="h5 pt-4 mb-1">Chia Azeez Omer</h3>
+                <p class="text-muted mb-0">Trainer</p>
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="card bg-primary overflow-hidden py-2 py-sm-3 py-md-4 mb-sm-2 mb-md-4">
+          <div class="bg-dark position-absolute top-0 start-0 w-100 h-100 opacity-5"></div>
+          <div class="position-absolute top-0 start-0 w-100 h-100 opacity-15" style="background-image: url(assets/img/landing/conference/noise.png); mix-blend-mode: soft-light;"></div>
+          <div class="card-body position-relative d-sm-flex align-items-center justify-content-between zindex-2 text-center">
+            <div class="d-md-flex align-items-center pe-md-4">
+              <div class="d-none d-md-block text-warning flex-shrink-0 me-3">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M12 0L12.6798 4.12733C13.2879 7.81883 16.1812 10.7121 19.8727 11.3202L24 12L19.8727 12.6798C16.1812 13.2879 13.2879 16.1812 12.6798 19.8727L12 24L11.3202 19.8727C10.7121 16.1812 7.81882 13.2879 4.12733 12.6798L0 12L4.12733 11.3202C7.81883 10.7121 10.7121 7.81882 11.3202 4.12733L12 0Z"></path>
+                </svg>
+              </div>
+              <h2 class="text-light pb-1 pb-md-0 mb-md-0">Do You Want to Become a Part of Our Team?</h2>
+            </div>
+            <a class="btn btn-lg btn-warning me-xl-4" href="#">Apply Now</a>
+          </div>
+        </div>
+      </section>
+
+      <!-- Sponsors-->
+      <section class="bg-secondary pb-md-2 pt-lg-2 pb-lg-4 py-xl-4 py-xxl-5">
+        <div class="container py-5">
+          <h2 class="h1 text-center pb-sm-2 py-md-3 mt-sm-2 mb-lg-4">Sponsored by</h2>
+          <div class="mb-4 mb-lg-5 pb-3 px-3" data-simplebar>
+            <div class="row row-cols-lg-4 flex-nowrap flex-lg-wrap gy-lg-5 mx-n3 justify-content-center">
+              <div class="col text-center" style="min-width: 225px;">
+                <img class="d-block d-dark-mode-none mb-2 mb-lg-2 mx-auto" src="assets/img/landing/conference/sponsors/ez-01.svg" alt="Logo" width="200">
+                <img class="d-none d-dark-mode-block mb-2 mb-lg-2 mx-auto" src="assets/img/landing/conference/sponsors/ez-02.svg" alt="Logo" width="200">
+              </div>
+            </div>
+          </div>
+          <div class="text-center mb-2 mb-sm-3">
+            <a class="btn btn-lg btn-primary" href="#contact-section" data-scroll data-scroll-offset="120">
+              Become a Sponsor
+            </a>
+          </div>
+        </div>
+      </section>
+
+      <!-- Courses Section -->
+      <section class="container py-5 mb-lg-2 mt-lg-3 my-xl-4 my-xxl-5" id="courses-section">
+        <div class="d-md-flex align-items-center justify-content-between pt-2 pt-sm-3 pb-3 mt-md-3 mb-3 mb-lg-4">
+          <div class="d-flex align-items-center mb-4 mb-md-0">
+            <h2 class="h1 mb-0">Our Course List</h2>
+            <div class="text-warning flex-shrink-0 ps-sm-1 ms-3">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                <path d="M12 0L12.6798 4.12733C13.2879 7.81883 16.1812 10.7121 19.8727 11.3202L24 12L19.8727 12.6798C16.1812 13.2879 13.2879 16.1812 12.6798 19.8727L12 24L11.3202 19.8727C10.7121 16.1812 7.81882 13.2879 4.12733 12.6798L0 12L4.12733 11.3202C7.81883 10.7121 10.7121 7.81882 11.3202 4.12733L12 0Z"></path>
+              </svg>
+            </div>
+          </div>
+        </div>
+        <div class="tab-content border-top border-bottom mb-3 mb-sm-4 mb-lg-5">
+          <!-- Day 1 tab-->
+          <div class="tab-pane fade show active" role="tabpanel">
+            <div class="row py-3 my-2 my-md-3">
+              <div class="col-md-3">
+                <div class="h6 mb-2 mb-md-0">Programming</div>
+              </div>
+              <div class="col-md-6">
+                <h3 class="h4 mb-0">
+                  Introduction to Programming in C++
+                </h3>
+                <p class="pt-2 pt-md-3 mb-md-0">
+                  Course Description
+                </p>
+              </div>
+              <div class="col-md-3 text-md-end">
+                <div class="d-inline-flex">
+                  <div class="bg-light flex-shrink-0 rounded-circle position-relative zindex-4" style="padding: 3px;">
+                    <img class="rounded-circle" src="assets/img/avatar/05.jpg" width="48" alt="Avatar">
+                  </div>
+                </div>
+              </div>
+            </div>
+            <hr>
+            <div class="row py-3 my-2 my-md-3">
+              <div class="col-md-3">
+                <div class="h6 mb-2 mb-md-0">Programming</div>
+              </div>
+              <div class="col-md-6">
+                <h3 class="h4 mb-0">
+                  Introduction to Programming in Python
+                </h3>
+                <p class="pt-2 pt-md-3 mb-md-0">
+                  Course Description
+                </p>
+              </div>
+              <div class="col-md-3 text-md-end">
+                <div class="d-inline-flex">
+                  <div class="bg-light flex-shrink-0 rounded-circle position-relative zindex-4" style="padding: 3px;">
+                    <img class="rounded-circle" src="assets/img/avatar/05.jpg" width="48" alt="Avatar">
+                  </div>
+                </div>
+              </div>
+            </div>
+            <hr>
+            <div class="row py-3 my-2 my-md-3">
+              <div class="col-md-3">
+                <div class="h6 mb-2 mb-md-0">Graphic Design</div>
+              </div>
+              <div class="col-md-6">
+                <h3 class="h4 mb-0">
+                  Introduction to Graphic Design
+                </h3>
+                <p class="pt-2 pt-md-3 mb-md-0">
+                  Course Description
+                </p>
+              </div>
+              <div class="col-md-3 text-md-end">
+                <div class="d-inline-flex">
+                  <div class="bg-light flex-shrink-0 rounded-circle position-relative zindex-4" style="padding: 3px;">
+                    <img class="rounded-circle" src="assets/img/avatar/05.jpg" width="48" alt="Avatar">
+                  </div>
+                </div>
+              </div>
+            </div>
+            <hr>
+            <div class="row py-3 my-2 my-md-3">
+              <div class="col-md-3">
+                <div class="h6 mb-2 mb-md-0">Information Technology (IT)</div>
+              </div>
+              <div class="col-md-6">
+                <h3 class="h4 mb-0">
+                  Microsoft Office Word
+                </h3>
+                <p class="pt-2 pt-md-3 mb-md-0">
+                  Course Description
+                </p>
+              </div>
+              <div class="col-md-3 text-md-end">
+                <div class="d-inline-flex">
+                  <div class="bg-light flex-shrink-0 rounded-circle position-relative zindex-4" style="padding: 3px;">
+                    <img class="rounded-circle" src="assets/img/avatar/05.jpg" width="48" alt="Avatar">
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="row py-3 my-2 my-md-3">
+              <div class="col-md-3">
+                <div class="h6 mb-2 mb-md-0">Information Technology (IT)</div>
+              </div>
+              <div class="col-md-6">
+                <h3 class="h4 mb-0">
+                  Microsoft Office Excel
+                </h3>
+                <p class="pt-2 pt-md-3 mb-md-0">
+                  Course Description
+                </p>
+              </div>
+              <div class="col-md-3 text-md-end">
+                <div class="d-inline-flex">
+                  <div class="bg-light flex-shrink-0 rounded-circle position-relative zindex-4" style="padding: 3px;">
+                    <img class="rounded-circle" src="assets/img/avatar/05.jpg" width="48" alt="Avatar">
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="row py-3 my-2 my-md-3">
+              <div class="col-md-3">
+                <div class="h6 mb-2 mb-md-0">Information Technology (IT)</div>
+              </div>
+              <div class="col-md-6">
+                <h3 class="h4 mb-0">
+                  Microsoft Office PowerPoint
+                </h3>
+                <p class="pt-2 pt-md-3 mb-md-0">
+                  Course Description
+                </p>
+              </div>
+              <div class="col-md-3 text-md-end">
+                <div class="d-inline-flex">
+                  <div class="bg-light flex-shrink-0 rounded-circle position-relative zindex-4" style="padding: 3px;">
+                    <img class="rounded-circle" src="assets/img/avatar/05.jpg" width="48" alt="Avatar">
+                  </div>
+                </div>
+              </div>
+            </div>
+            <hr>
+            <div class="row py-3 my-2 my-md-3">
+              <div class="col-md-3">
+                <div class="h6 mb-2 mb-md-0">Programming</div>
+              </div>
+              <div class="col-md-6">
+                <h3 class="h4 mb-0">
+                  Coding & Robotics for Children
+                </h3>
+                <p class="pt-2 pt-md-3 mb-md-0">
+                  Course Description
+                </p>
+              </div>
+              <div class="col-md-3 text-md-end">
+                <div class="d-inline-flex">
+                  <div class="bg-light flex-shrink-0 rounded-circle position-relative zindex-4" style="padding: 3px;">
+                    <img class="rounded-circle" src="assets/img/avatar/05.jpg" width="48" alt="Avatar">
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="row py-3 my-2 my-md-3">
+              <div class="col-md-3">
+                <div class="h6 mb-2 mb-md-0">Information Technology (IT)</div>
+              </div>
+              <div class="col-md-6">
+                <h3 class="h4 mb-0">
+                  Basic Computer Skills (the Windows OS)
+                </h3>
+                <p class="pt-2 pt-md-3 mb-md-0">
+                  Course Description
+                </p>
+              </div>
+              <div class="col-md-3 text-md-end">
+                <div class="d-inline-flex">
+                  <div class="bg-light flex-shrink-0 rounded-circle position-relative zindex-4" style="padding: 3px;">
+                    <img class="rounded-circle" src="assets/img/avatar/05.jpg" width="48" alt="Avatar">
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="row py-3 my-2 my-md-3">
+              <div class="col-md-3">
+                <div class="h6 mb-2 mb-md-0">Engineering/CAD Work</div>
+              </div>
+              <div class="col-md-6">
+                <h3 class="h4 mb-0">
+                  AutoCAD
+                </h3>
+                <p class="pt-2 pt-md-3 mb-md-0">
+                  Course Description
+                </p>
+              </div>
+              <div class="col-md-3 text-md-end">
+                <div class="d-inline-flex">
+                  <div class="bg-light flex-shrink-0 rounded-circle position-relative zindex-4" style="padding: 3px;">
+                    <img class="rounded-circle" src="assets/img/avatar/05.jpg" width="48" alt="Avatar">
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="row py-3 my-2 my-md-3">
+              <div class="col-md-3">
+                <div class="h6 mb-2 mb-md-0">Engineering/CAD Work</div>
+              </div>
+              <div class="col-md-6">
+                <h3 class="h4 mb-0">
+                  Autodesk Revit
+                </h3>
+                <p class="pt-2 pt-md-3 mb-md-0">
+                  Course Description
+                </p>
+              </div>
+              <div class="col-md-3 text-md-end">
+                <div class="d-inline-flex">
+                  <div class="bg-light flex-shrink-0 rounded-circle position-relative zindex-4" style="padding: 3px;">
+                    <img class="rounded-circle" src="assets/img/avatar/05.jpg" width="48" alt="Avatar">
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- GALLERY -->
+      <section class="container py-5 my-lg-3 my-xl-4 my-xxl-5" id="gallery-section">
+        <div class="py-2 py-sm-3 py-md-4 my-md-2 my-xxl-3">
+          <h2 class="h1 text-center pt-xxl-1">Our Best Moments</h2>
+          <div class="gallery row g-3 g-md-4">
+            <div class="col-sm-6">
+              <div class="row g-3 g-md-4">
+                <div class="col-6">
+                  <a class="gallery-item d-block card-hover zoom-effect" href="assets/img/landing/conference/gallery/01.jpg">
+                    <div class="d-flex justify-content-center align-items-center position-absolute top-0 start-0 w-100 h-100 rounded-4 overflow-hidden zindex-2 opacity-0">
+                      <i class="ai-zoom-in fs-2 text-white position-relative zindex-2"></i>
+                      <div class="position-absolute top-0 start-0 w-100 h-100 bg-dark opacity-40"></div>
+                    </div>
+                    <div class="zoom-effect-wrapper rounded-4">
+                      <img class="zoom-effect-img" src="assets/img/landing/conference/gallery/th01.jpg" alt="">
+                    </div>
+                  </a>
+                </div>
+                <div class="col-6">
+                  <a class="gallery-item d-block card-hover zoom-effect" href="assets/img/landing/conference/gallery/02.jpg">
+                    <div class="d-flex justify-content-center align-items-center position-absolute top-0 start-0 w-100 h-100 rounded-4 overflow-hidden zindex-2 opacity-0">
+                      <i class="ai-zoom-in fs-2 text-white position-relative zindex-2"></i>
+                      <div class="position-absolute top-0 start-0 w-100 h-100 bg-dark opacity-40"></div>
+                    </div>
+                    <div class="zoom-effect-wrapper rounded-4">
+                      <img class="zoom-effect-img" src="assets/img/landing/conference/gallery/th02.jpg" alt="">
+                    </div>
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div class="col-sm-6">
+              <div class="row g-3 g-md-4">
+                <div class="col-6 order-sm-2">
+                  <a class="gallery-item d-block card-hover zoom-effect" href="assets/img/landing/conference/gallery/03.jpg">
+                    <div class="d-flex justify-content-center align-items-center position-absolute top-0 start-0 w-100 h-100 rounded-4 overflow-hidden zindex-2 opacity-0">
+                      <i class="ai-zoom-in fs-2 text-white position-relative zindex-2"></i>
+                      <div class="position-absolute top-0 start-0 w-100 h-100 bg-dark opacity-40"></div>
+                    </div>
+                    <div class="zoom-effect-wrapper rounded-4">
+                      <img class="zoom-effect-img" src="assets/img/landing/conference/gallery/th03.jpg" alt="">
+                    </div>
+                  </a>
+                </div>
+                <div class="col-6 order-sm-3">
+                  <a class="gallery-item d-block card-hover zoom-effect" href="assets/img/landing/conference/gallery/04.jpg">
+                    <div class="d-flex justify-content-center align-items-center position-absolute top-0 start-0 w-100 h-100 rounded-4 overflow-hidden zindex-2 opacity-0">
+                      <i class="ai-zoom-in fs-2 text-white position-relative zindex-2"></i>
+                      <div class="position-absolute top-0 start-0 w-100 h-100 bg-dark opacity-40"></div>
+                    </div>
+                    <div class="zoom-effect-wrapper rounded-4">
+                      <img class="zoom-effect-img" src="assets/img/landing/conference/gallery/th04.jpg" alt="">
+                    </div>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- CONTACT FORM -->
+      <section class="bg-primary ignore-dark-mode position-relative py-5" id="contact-section">
+        <div class="bg-dark position-absolute top-0 start-0 w-100 h-100 opacity-5"></div>
+        <div class="position-absolute top-0 start-0 w-100 h-100 opacity-15" style="background-image: url(assets/img/landing/conference/noise.png); mix-blend-mode: soft-light;"></div>
+        <div class="container position-relative zindex-2 pt-sm-2 pb-3 py-md-4 py-lg-5">
+          <div class="row align-items-center">
+            <div class="col-md-6 col-lg-5 col-xxl-4 pb-2 pb-md-0 mb-4 mb-md-0">
+              <h2 class="display-5 text-light mb-4 mb-md-5 text-center">Want to talk? We're happy to help</h2>
+            </div>
+            <div class="col-md-6 offset-lg-1 offset-xxl-2">
+              <div class="card bg-white border-0 p-1 p-sm-2 p-lg-3">
+                <form class="card-body needs-validation p-4" action="https://mailthis.to/saadsawash@outlook.com" method="POST" novalidate>
+                  <div class="mb-4">
+                    <label class="form-label fs-base" for="email">E-Mail</label>
+                    <input class="form-control form-control-lg" type="email" placeholder="Your E-Mail Address" required id="email">
+                    <div class="invalid-feedback">Please provide a valid email address!</div>
+                  </div>
+                  <div class="mb-4">
+                    <label class="form-label fs-base" for="name">Name</label>
+                    <input class="form-control form-control-lg" type="text" placeholder="Your Name" required id="name">
+                    <div class="invalid-feedback">Please enter your name!</div>
+                  </div>
+                  <div class="mb-4">
+                    <label class="form-label fs-base" for="message">Message</label>
+                    <textarea class="form-control form-control-lg" rows="5" placeholder="Your Message" required id="message"></textarea>
+                    <div class="invalid-feedback">Please enter your message!</div>
+                  </div>
+                  <button class="btn btn-lg btn-warning" type="submit">Send Request</button>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    
+    <!-- FOOTER -->
+    <footer class="footer dark-mode bg-dark py-5">
+      <div class="container pt-1 pt-sm-2 pt-md-3 pt-lg-4 pt-xl-5">
+        <div class="border-bottom text-center pb-4">
+          <a class="navbar-brand d-inline-flex text-nav py-0 mb-3 mb-md-4" href="/">
+            <span class="text-primary flex-shrink-0 me-2">
+              <img src="assets/img/logos/logo_emblem_white.svg" alt="" width="32">
+            </span>
+            <span>KirkukSpace</span>
+          </a>
+          <ul class="nav justify-content-center py-1 pb-sm-2">
+            <li class="nav-item">
+              <a class="nav-link py-2 px-3 mx-1" href="/">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link py-2 px-3 mx-1" href="#services-section" data-scroll data-scroll-offset="120">Services</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link py-2 px-3 mx-1" href="#courses-section" data-scroll data-scroll-offset="120">Courses</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link py-2 px-3 mx-1" href="#staff-section" data-scroll data-scroll-offset="120">Staff</a>
+            </li>
+          </ul>
+        </div>
+        <div class="d-sm-flex align-items-center justify-content-between pt-4 mt-2 mt-sm-0">
+          <div class="d-flex justify-content-center order-sm-2 mb-4 mb-sm-0">
+            <a class="btn btn-icon btn-sm btn-secondary btn-instagram rounded-circle me-3" href="https://www.instagram.com/kirkukspace/" target="_blank">
+              <i class="ai-instagram"></i>
+            </a>
+            <a class="btn btn-icon btn-sm btn-secondary btn-facebook rounded-circle me-3" href="https://www.facebook.com/gatekr" target="_blank">
+              <i class="ai-facebook"></i>
+            </a>
+          </div>
+          <p class="fs-sm order-sm-1 text-center mb-0">
+            <span class="opacity-70">
+              &copy; 2023 KirkukSpace. All rights reserved.
+            </span>
+          </p>
+        </div>
+      </div>
+    </footer>
+
+    <!-- BACK TO TOP BUTTON -->
+    <a class="btn-scroll-top" href="#top" data-scroll>
+      <svg viewBox="0 0 40 40" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+        <circle cx="20" cy="20" r="19" fill="none" stroke="currentColor" stroke-width="1.5" stroke-miterlimit="10"></circle>
+      </svg>
+      <i class="ai-arrow-up"></i>
+    </a>
+
+    <!-- MODALS -->
+    <div class="modal fade" id="modal-dalya" tabindex="-1" role="dialog"> <!-- Dalya Hunar Najeeb -->
+      <div class="modal-dialog modal-lg" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h4 class="modal-title">Dalya Hunar Najeeb</h4>
+            <button class="btn-close" type="button" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <p><strong>Educational Level:</strong> MA Communication Engineering (Cyprus)</p>
+            <p><strong>Role:</strong> Co-Founder, Director and Trainer</p>
+            <p>
+              <strong>Biography:</strong>
+              TODO: To be filled in.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="modal fade" id="modal-hallo" tabindex="-1" role="dialog"> <!-- Hallo Ali Hama -->
+      <div class="modal-dialog modal-lg" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h4 class="modal-title">Hallo Ali Hama</h4>
+            <button class="btn-close" type="button" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <p><strong>Educational Level:</strong> MA Computer Science (Cyprus)</p>
+            <p><strong>Role:</strong> Co-Founder and IT Trainer</p>
+            <p>
+              <strong>Biography:</strong>
+              TODO: To be filled in.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="modal fade" id="modal-farman" tabindex="-1" role="dialog"> <!-- Farman Najm Satar -->
+      <div class="modal-dialog modal-lg" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h4 class="modal-title">Farman Najm Satar</h4>
+            <button class="btn-close" type="button" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <p><strong>Educational Level:</strong> BA Computer Engineering (Iraq)</p>
+            <p><strong>Role:</strong> IT Trainer</p>
+            <p>
+              <strong>Biography:</strong>
+              TODO: To be filled in.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="modal fade" id="modal-ismael" tabindex="-1" role="dialog"> <!-- Ismael Majeed Ismael -->
+      <div class="modal-dialog modal-lg" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h4 class="modal-title">Ismael Majeed Ismael</h4>
+            <button class="btn-close" type="button" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <p><strong>Educational Level:</strong> MA Financial Economics (USA)</p>
+            <p><strong>Role:</strong> Business Trainer</p>
+            <p>
+              <strong>Biography:</strong>
+              TODO: To be filled in.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="modal fade" id="modal-rebean" tabindex="-1" role="dialog"> <!-- Rebean Al Sliffani -->
+      <div class="modal-dialog modal-lg" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h4 class="modal-title">Rebean Al Sliffani</h4>
+            <button class="btn-close" type="button" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <p><strong>Educational Level:</strong> PhD Entrepreneurship (Netherlands)</p>
+            <p><strong>Role:</strong> Entrepreneurship Trainer</p>
+            <p>
+              <strong>Biography:</strong>
+              TODO: To be filled in.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="modal fade" id="modal-saad" tabindex="-1" role="dialog"> <!-- Saad Sawash Mahmood -->
+      <div class="modal-dialog modal-lg" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h4 class="modal-title">Saad Sawash Mahmood</h4>
+            <button class="btn-close" type="button" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <p><strong>Educational Level:</strong> BSc in Computer Science (Iraq)</p>
+            <p><strong>Role:</strong> IT Trainer</p>
+            <p>
+              <strong>Biography:</strong>
+              TODO: To be filled in.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="modal fade" id="modal-dara" tabindex="-1" role="dialog"> <!-- Dara Othman Hama -->
+      <div class="modal-dialog modal-lg" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h4 class="modal-title">Dara Othman Hama</h4>
+            <button class="btn-close" type="button" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <p><strong>Educational Level:</strong> BA Engineering (Iraq)</p>
+            <p><strong>Role:</strong> Graphic Design Trainer</p>
+            <p>
+              <strong>Biography:</strong>
+              TODO: To be filled in.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="modal fade" id="modal-faridon" tabindex="-1" role="dialog"> <!-- Faridon Hadi -->
+      <div class="modal-dialog modal-lg" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h4 class="modal-title">Faridon Hadi</h4>
+            <button class="btn-close" type="button" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <p><strong>Educational Level:</strong> BA Computer Science (Iraq)</p>
+            <p><strong>Role:</strong> IT Trainer</p>
+            <p>
+              <strong>Biography:</strong>
+              TODO: To be filled in.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="modal fade" id="modal-saleh" tabindex="-1" role="dialog"> <!-- Saleh Habeeb Najeeb -->
+      <div class="modal-dialog modal-lg" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h4 class="modal-title">Saleh Habeeb Najeeb</h4>
+            <button class="btn-close" type="button" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <p><strong>Educational Level:</strong> MA Civil Engineering (Turkey)</p>
+            <p><strong>Role:</strong> Engineering Trainer</p>
+            <p>
+              <strong>Biography:</strong>
+              TODO: To be filled in.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="modal fade" id="modal-muntaser" tabindex="-1" role="dialog"> <!-- Muntaser Sharief -->
+      <div class="modal-dialog modal-lg" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h4 class="modal-title">Muntaser Sharief</h4>
+            <button class="btn-close" type="button" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <p><strong>Educational Level:</strong> PhD Computer Engineering (USA)</p>
+            <p><strong>Role:</strong> IT Trainer</p>
+            <p>
+              <strong>Biography:</strong>
+              TODO: To be filled in.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="modal fade" id="modal-maral" tabindex="-1" role="dialog"> <!-- Maral Salah Shukri -->
+      <div class="modal-dialog modal-lg" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h4 class="modal-title">Maral Salah Shukri</h4>
+            <button class="btn-close" type="button" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <p><strong>Educational Level:</strong> BA Information Technology</p>
+            <p><strong>Role:</strong> IT Trainer</p>
+            <p>
+              <strong>Biography:</strong>
+              TODO: To be filled in.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="modal fade" id="modal-chia" tabindex="-1" role="dialog"> <!-- Chia Azeez Omer -->
+      <div class="modal-dialog modal-lg" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h4 class="modal-title">Chia Azeez Omer</h4>
+            <button class="btn-close" type="button" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <p><strong>Educational Level:</strong> BA Computer Engineer</p>
+            <p><strong>Role:</strong> IT Trainer</p>
+            <p>
+              <strong>Biography:</strong>
+              TODO: To be filled in.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- VENDOR SCRIPTS -->
+    <script src="assets/vendor/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/vendor/smooth-scroll/dist/smooth-scroll.polyfills.min.js"></script>
+    <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+    <script src="assets/vendor/simplebar/dist/simplebar.min.js"></script>
+    <script src="assets/vendor/lightgallery/lightgallery.min.js"></script>
+    <script src="assets/vendor/lightgallery/plugins/video/lg-video.min.js"></script>
+    <script src="assets/vendor/lightgallery/plugins/fullscreen/lg-fullscreen.min.js"></script>
+    <script src="assets/vendor/lightgallery/plugins/zoom/lg-zoom.min.js"></script>
+
+    <!-- MAIN THEME SCRIPT -->
+    <script src="assets/js/theme.min.js"></script>
+
+    <!-- DAILY QUOTE FUNCTIONALITY -->
+    <script>
+      const dailyQuoteEl = document.getElementById('dailyQuote');
+      const dailyQuoteAuthorEl = document.getElementById('dailyQuoteAuthor');
+
+      const headers = new Headers();
+      headers.append('X-API-Key', 'BuT28VfIwSOb8Ii10RS4gA==YB3uz54yipVoBiaG');
+
+      fetch('https://api.api-ninjas.com/v1/quotes?category=education', { headers })
+        .then(response => response.json())
+        .then(data => {
+          const quote = data[0].quote;
+          const author = data[0].author;
+          dailyQuoteEl.innerText = quote;
+          dailyQuoteAuthorEl.innerText = author;
+        })
+        .catch(error => {
+          console.error('Error fetching quote:', error);
+        });
+    </script>
+  </body>
+
+</html>
