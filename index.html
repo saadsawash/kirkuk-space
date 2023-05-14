@@ -19,12 +19,14 @@
 
     <!-- WEBSITE THEME MODE -->
     <script>
-      let mode = window.localStorage.getItem('mode'),
-          root = document.getElementsByTagName('html')[0];
+      let mode = window.localStorage.getItem('mode');
+      let root = document.getElementsByTagName('html')[0];
+
       if (mode !== undefined && mode === 'dark') {
         root.classList.add('dark-mode');
       } else {
         root.classList.remove('dark-mode');
+
       }
     </script>
     
@@ -43,7 +45,54 @@
     
     <!-- CUSTOM COLORS -->
     <style id="customizer-styles">
-      :root{--ar-primary:#2c8fd1;--ar-primary-rgb:44,143,209;--ar-link-color:#2c8fd1;--ar-link-hover-color:#1376b8;--ar-warning:#e4ab20;--ar-warning-rgb:228,171,32;}.btn-primary{--ar-btn-bg:#2c8fd1;--ar-btn-border-color:#2c8fd1;--ar-btn-hover-bg:#1376b8;--ar-btn-hover-border-color:#1376b8;--ar-btn-active-bg:#1376b8;--ar-btn-active-border-color:#1376b8;--ar-btn-disabled-bg:#2c8fd1;--ar-btn-disabled-border-color:#2c8fd1;}.btn-warning{--ar-btn-bg:#e4ab20;--ar-btn-border-color:#e4ab20;--ar-btn-hover-bg:#cb9207;--ar-btn-hover-border-color:#cb9207;--ar-btn-active-bg:#cb9207;--ar-btn-active-border-color:#cb9207;--ar-btn-disabled-bg:#e4ab20;--ar-btn-disabled-border-color:#e4ab20;}.btn-outline-primary{--ar-btn-color:#2c8fd1;--ar-btn-border-color:#2c8fd1;--ar-btn-hover-bg:#2c8fd1;--ar-btn-hover-border-color:#2c8fd1;--ar-btn-active-bg:#2c8fd1;--ar-btn-active-border-color:#2c8fd1;--ar-btn-disabled-color:#2c8fd1;--ar-btn-disabled-border-color:#2c8fd1;}.btn-outline-warning{--ar-btn-color:#e4ab20;--ar-btn-border-color:#e4ab20;--ar-btn-hover-bg:#e4ab20;--ar-btn-hover-border-color:#e4ab20;--ar-btn-active-bg:#e4ab20;--ar-btn-active-border-color:#e4ab20;--ar-btn-disabled-color:#e4ab20;--ar-btn-disabled-border-color:#e4ab20;}
+      :root{
+        --ar-primary:#2c8fd1;
+        --ar-primary-rgb:44,143,209;
+        --ar-link-color:#2c8fd1;
+        --ar-link-hover-color:#1376b8;
+        --ar-warning:#e4ab20;
+        --ar-warning-rgb:228,171,32;
+      }
+      .btn-primary{
+        --ar-btn-bg:#2c8fd1;
+        --ar-btn-border-color:#2c8fd1;
+        --ar-btn-hover-bg:#1376b8;
+        --ar-btn-hover-border-color:#1376b8;
+        --ar-btn-active-bg:#1376b8;
+        --ar-btn-active-border-color:#1376b8;
+        --ar-btn-disabled-bg:#2c8fd1;
+        --ar-btn-disabled-border-color:#2c8fd1;
+      }
+      .btn-warning{
+        --ar-btn-bg:#e4ab20;
+        --ar-btn-border-color:#e4ab20;
+        --ar-btn-hover-bg:#cb9207;
+        --ar-btn-hover-border-color:#cb9207;
+        --ar-btn-active-bg:#cb9207;
+        --ar-btn-active-border-color:#cb9207;
+        --ar-btn-disabled-bg:#e4ab20;
+        --ar-btn-disabled-border-color:#e4ab20;
+      }
+      .btn-outline-primary{
+        --ar-btn-color:#2c8fd1;
+        --ar-btn-border-color:#2c8fd1;
+        --ar-btn-hover-bg:#2c8fd1;
+        --ar-btn-hover-border-color:#2c8fd1;
+        --ar-btn-active-bg:#2c8fd1;
+        --ar-btn-active-border-color:#2c8fd1;
+        --ar-btn-disabled-color:#2c8fd1;
+        --ar-btn-disabled-border-color:#2c8fd1;
+      }
+      .btn-outline-warning{
+        --ar-btn-color:#e4ab20;
+        --ar-btn-border-color:#e4ab20;
+        --ar-btn-hover-bg:#e4ab20;
+        --ar-btn-hover-border-color:#e4ab20;
+        --ar-btn-active-bg:#e4ab20;
+        --ar-btn-active-border-color:#e4ab20;
+        --ar-btn-disabled-color:#e4ab20;
+        --ar-btn-disabled-border-color:#e4ab20;
+      }
     </style>
   </head>
 
@@ -52,12 +101,13 @@
     <main class="page-wrapper">
       <div>
         <!-- HEADER (NAVBAR) -->
-        <header class="navbar navbar-expand-lg fixed-top bg-secondary">
+        <header class="navbar navbar-expand-lg fixed-top" id="header">
           <div class="container">
             <!-- BRANDING -->
             <a class="navbar-brand pe-sm-3" href="/">
               <span class="text-primary flex-shrink-0 me-2">
-                <img src="assets/img/logos/logo_full_color.svg" alt="" width="150">      
+                <img class="d-block d-dark-mode-none" src="assets/img/logos/logo_full_color.svg" alt="" width="150">    
+                <img class="d-none d-dark-mode-block" src="assets/img/logos/logo_full_white.svg" alt="" width="150">    
               </span>
             </a>
             <!-- THEME TOGGLER -->
@@ -195,7 +245,7 @@
       </section>
 
       <!-- DAILY QUOTE SECTION -->
-      <section class="bg-secondary position-relative py-4 py-md-5">
+      <section class="position-relative py-4 py-md-5" id="daily-quote">
         <div class="container position-relative zindex-2">
           <figure class="text-center">
             <blockquote class="blockquote" id="dailyQuote">
@@ -235,16 +285,6 @@
                     We offer a wide range of courses to equip young adults and recent university graduates with the skills necessary to secure employment
                     or establish their own start-up ventures.
                   </p>
-                  <ul class="fs-xl mb-0">
-                    <li class="mb-1">Basic Computer Skills (Windows OS)</li>
-                    <li class="mb-1">Microsoft Office Suite (Word, Excel, Powerpoint)</li>
-                    <li class="mb-1">Graphic Design</li>
-                    <li class="mb-1">AutoCAD</li>
-                    <li class="mb-1">Autodesk Revit</li>
-                    <li class="mb-1">Coding and Robotics for Children</li>
-                    <li class="mb-1">Introduction to Programming in C++</li>
-                    <li class="mb-1">Introduction to Programming in Python</li>
-                  </ul>
                 </div>
                 <div class="tab-pane fade" id="e-services" role="tabpanel">
                   <p class="fs-xl mb-4">
@@ -276,6 +316,106 @@
               </div>
             </div>
           </div>
+        </div>
+      </section>
+
+      <!-- COURSES SECTION -->
+      <section class="container py-5 mb-lg-2 mt-lg-3 my-xl-4 my-xxl-5" id="courses-section">
+        <div class="d-md-flex align-items-center justify-content-between pt-2 pt-sm-3 pb-3 mt-md-3">
+          <div class="d-flex align-items-center">
+            <h2 class="h1 mb-0">Our Courses</h2>
+          </div>
+        </div>
+        <div>
+          <div class="row align-items-center mt-md-3 mt-lg-0">
+            <div class="col-md-6 pb-2 pb-sm-0 mb-4 mb-sm-5 mb-md-0">
+              <div class="binded-content bg-primary rounded-5">
+                <div class="binded-item active" id="image1">
+                  <img class="d-block position-relative zindex-2" src="assets/img/courses/cpp.png" alt="C++">
+                </div>
+                <div class="binded-item" id="image2">
+                  <img class="d-block position-relative zindex-2" src="assets/img/courses/python.png" alt="Python">
+                </div>
+                <div class="binded-item" id="image3">
+                  <img class="d-block position-relative zindex-2" src="assets/img/courses/python.png" alt="Microsoft Office Word">
+                </div>
+                <div class="binded-item" id="image4">
+                  <img class="d-block position-relative zindex-2" src="assets/img/courses/word.png" alt="Microsoft Office Word">
+                </div>
+                <div class="binded-item" id="image5">
+                  <img class="d-block position-relative zindex-2" src="assets/img/courses/excel.png" alt="Microsoft Office Excel">
+                </div>
+                <div class="binded-item" id="image6">
+                  <img class="d-block position-relative zindex-2" src="assets/img/courses/powerpoint.png" alt="Microsoft Office Powerpoint">
+                </div>
+                <div class="binded-item" id="image7">
+                  <img class="d-block position-relative zindex-2" src="assets/img/courses/powerpoint.png" alt="Coding & Robotics for Children">
+                </div>
+                <div class="binded-item" id="image8">
+                  <img class="d-block position-relative zindex-2" src="assets/img/courses/windows.png" alt="Microsoft Windows">
+                </div>
+                <div class="binded-item" id="image9">
+                  <img class="d-block position-relative zindex-2" src="assets/img/courses/autocad.png" alt="Autodesk AutoCad">
+                </div>
+                <div class="binded-item" id="image10">
+                  <img class="d-block position-relative zindex-2" src="assets/img/courses/revit.png" alt="Autodesk Revit">
+                </div>
+              </div>
+            </div>
+            <div class="col-md-6 col-xl-5 offset-xl-1">
+              <div class="ps-md-4 ps-xl-0">
+                <div class="swiper text-center" data-swiper-options='{"spaceBetween": 30, "autoHeight": true, "bindedContent": true, "navigation": {"prevEl": "#prev-feature", "nextEl": "#next-feature"}}'>
+                  <div class="swiper-wrapper">
+                    <div class="swiper-slide" data-swiper-binded="#image1">
+                      <div class="text-primary fs-xl fw-bold mb-3">01</div>
+                      <h2 class="h1 mb-lg-4">Introduction to Programming in C++</h2>
+                    </div>
+                    <div class="swiper-slide" data-swiper-binded="#image2">
+                      <div class="text-primary fs-xl fw-bold mb-3">02</div>
+                      <h2 class="h1 mb-lg-4">Introduction to Programming in Python</h2>
+                    </div>
+                    <div class="swiper-slide" data-swiper-binded="#image3">
+                      <div class="text-primary fs-xl fw-bold mb-3">03</div>
+                      <h2 class="h1 mb-lg-4">Introduction to Graphic Design</h2>
+                    </div>
+                    <div class="swiper-slide" data-swiper-binded="#image4">
+                      <div class="text-primary fs-xl fw-bold mb-3">04</div>
+                      <h2 class="h1 mb-lg-4">Microsoft Office Word</h2>
+                    </div>
+                    <div class="swiper-slide" data-swiper-binded="#image5">
+                      <div class="text-primary fs-xl fw-bold mb-3">05</div>
+                      <h2 class="h1 mb-lg-4">Microsoft Office Excel</h2>
+                    </div>
+                    <div class="swiper-slide" data-swiper-binded="#image6">
+                      <div class="text-primary fs-xl fw-bold mb-3">06</div>
+                      <h2 class="h1 mb-lg-4">Microsoft Office Powerpoint</h2>
+                    </div>
+                    <div class="swiper-slide" data-swiper-binded="#image7">
+                      <div class="text-primary fs-xl fw-bold mb-3">07</div>
+                      <h2 class="h1 mb-lg-4">Coding & Robotics for Children</h2>
+                    </div>
+                    <div class="swiper-slide" data-swiper-binded="#image8">
+                      <div class="text-primary fs-xl fw-bold mb-3">08</div>
+                      <h2 class="h1 mb-lg-4">Computer Skills (Windows OS)</h2>
+                    </div>
+                    <div class="swiper-slide" data-swiper-binded="#image9">
+                      <div class="text-primary fs-xl fw-bold mb-3">09</div>
+                      <h2 class="h1 mb-lg-4">Autodesk AutoCad</h2>
+                    </div>
+                    <div class="swiper-slide" data-swiper-binded="#image10">
+                      <div class="text-primary fs-xl fw-bold mb-3">10</div>
+                      <h2 class="h1 mb-lg-4">Autodesk Revit</h2>
+                    </div>
+                </div>
+                <!-- Slider controls (Prev / next)-->
+                <div class="d-flex justify-content-center pt-4 mt-2 mt-lg-0 pt-lg-5">
+                  <button class="btn btn-icon btn-outline-primary rounded-circle me-3" type="button" id="prev-feature"><i class="ai-arrow-left"></i></button>
+                  <button class="btn btn-icon btn-outline-primary rounded-circle" type="button" id="next-feature"><i class="ai-arrow-right"></i></button>
+                </div>
+              </div>
+            </div>
+          </div>
+        
         </div>
       </section>
       
@@ -380,249 +520,6 @@
         </div>
       </section>
 
-      <!-- PARTNERS -->
-      <section class="bg-secondary pb-md-2 pt-lg-2 pb-lg-4 py-xl-4 py-xxl-5">
-        <div class="container py-5">
-          <h2 class="h1 text-center pb-sm-2 py-md-3 mt-sm-2 mb-lg-4">Partners With</h2>
-          <div class="mb-4 mb-lg-5 pb-3 px-3" data-simplebar>
-            <div class="row row-cols-lg-4 flex-nowrap flex-lg-wrap gy-lg-5 mx-n3 justify-content-center">
-              <div class="col text-center" style="min-width: 225px;">
-                <img class="d-block d-dark-mode-none mb-2 mb-lg-2 mx-auto" src="assets/img/landing/conference/sponsors/ez-01.svg" alt="Logo" width="200">
-                <img class="d-none d-dark-mode-block mb-2 mb-lg-2 mx-auto" src="assets/img/landing/conference/sponsors/ez-02.svg" alt="Logo" width="200">
-              </div>
-            </div>
-          </div>
-          <div class="text-center mb-2 mb-sm-3">
-            <a class="btn btn-lg btn-primary" href="#contact-section" data-scroll data-scroll-offset="120">
-              Become a Partner
-            </a>
-          </div>
-        </div>
-      </section>
-
-      <!-- Courses Section -->
-      <section class="container py-5 mb-lg-2 mt-lg-3 my-xl-4 my-xxl-5" id="courses-section">
-        <div class="d-md-flex align-items-center justify-content-between pt-2 pt-sm-3 pb-3 mt-md-3 mb-3 mb-lg-4">
-          <div class="d-flex align-items-center mb-4 mb-md-0">
-            <h2 class="h1 mb-0">Our Course List</h2>
-            <div class="text-warning flex-shrink-0 ps-sm-1 ms-3">
-              <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
-                <path d="M12 0L12.6798 4.12733C13.2879 7.81883 16.1812 10.7121 19.8727 11.3202L24 12L19.8727 12.6798C16.1812 13.2879 13.2879 16.1812 12.6798 19.8727L12 24L11.3202 19.8727C10.7121 16.1812 7.81882 13.2879 4.12733 12.6798L0 12L4.12733 11.3202C7.81883 10.7121 10.7121 7.81882 11.3202 4.12733L12 0Z"></path>
-              </svg>
-            </div>
-          </div>
-        </div>
-        <div class="tab-content border-top border-bottom mb-3 mb-sm-4 mb-lg-5">
-          <!-- Day 1 tab-->
-          <div class="tab-pane fade show active" role="tabpanel">
-            <div class="row py-3 my-2 my-md-3">
-              <div class="col-md-3">
-                <div class="h6 mb-2 mb-md-0">Programming</div>
-              </div>
-              <div class="col-md-6">
-                <h3 class="h4 mb-0">
-                  Introduction to Programming in C++
-                </h3>
-                <p class="pt-2 pt-md-3 mb-md-0">
-                  Course Description
-                </p>
-              </div>
-              <div class="col-md-3 text-md-end">
-                <div class="d-inline-flex">
-                  <div class="bg-light flex-shrink-0 rounded-circle position-relative zindex-4" style="padding: 3px;">
-                    <img class="rounded-circle" src="assets/img/avatar/05.jpg" width="48" alt="Avatar">
-                  </div>
-                </div>
-              </div>
-            </div>
-            <hr>
-            <div class="row py-3 my-2 my-md-3">
-              <div class="col-md-3">
-                <div class="h6 mb-2 mb-md-0">Programming</div>
-              </div>
-              <div class="col-md-6">
-                <h3 class="h4 mb-0">
-                  Introduction to Programming in Python
-                </h3>
-                <p class="pt-2 pt-md-3 mb-md-0">
-                  Course Description
-                </p>
-              </div>
-              <div class="col-md-3 text-md-end">
-                <div class="d-inline-flex">
-                  <div class="bg-light flex-shrink-0 rounded-circle position-relative zindex-4" style="padding: 3px;">
-                    <img class="rounded-circle" src="assets/img/avatar/05.jpg" width="48" alt="Avatar">
-                  </div>
-                </div>
-              </div>
-            </div>
-            <hr>
-            <div class="row py-3 my-2 my-md-3">
-              <div class="col-md-3">
-                <div class="h6 mb-2 mb-md-0">Graphic Design</div>
-              </div>
-              <div class="col-md-6">
-                <h3 class="h4 mb-0">
-                  Introduction to Graphic Design
-                </h3>
-                <p class="pt-2 pt-md-3 mb-md-0">
-                  Course Description
-                </p>
-              </div>
-              <div class="col-md-3 text-md-end">
-                <div class="d-inline-flex">
-                  <div class="bg-light flex-shrink-0 rounded-circle position-relative zindex-4" style="padding: 3px;">
-                    <img class="rounded-circle" src="assets/img/avatar/05.jpg" width="48" alt="Avatar">
-                  </div>
-                </div>
-              </div>
-            </div>
-            <hr>
-            <div class="row py-3 my-2 my-md-3">
-              <div class="col-md-3">
-                <div class="h6 mb-2 mb-md-0">Information Technology (IT)</div>
-              </div>
-              <div class="col-md-6">
-                <h3 class="h4 mb-0">
-                  Microsoft Office Word
-                </h3>
-                <p class="pt-2 pt-md-3 mb-md-0">
-                  Course Description
-                </p>
-              </div>
-              <div class="col-md-3 text-md-end">
-                <div class="d-inline-flex">
-                  <div class="bg-light flex-shrink-0 rounded-circle position-relative zindex-4" style="padding: 3px;">
-                    <img class="rounded-circle" src="assets/img/avatar/05.jpg" width="48" alt="Avatar">
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="row py-3 my-2 my-md-3">
-              <div class="col-md-3">
-                <div class="h6 mb-2 mb-md-0">Information Technology (IT)</div>
-              </div>
-              <div class="col-md-6">
-                <h3 class="h4 mb-0">
-                  Microsoft Office Excel
-                </h3>
-                <p class="pt-2 pt-md-3 mb-md-0">
-                  Course Description
-                </p>
-              </div>
-              <div class="col-md-3 text-md-end">
-                <div class="d-inline-flex">
-                  <div class="bg-light flex-shrink-0 rounded-circle position-relative zindex-4" style="padding: 3px;">
-                    <img class="rounded-circle" src="assets/img/avatar/05.jpg" width="48" alt="Avatar">
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="row py-3 my-2 my-md-3">
-              <div class="col-md-3">
-                <div class="h6 mb-2 mb-md-0">Information Technology (IT)</div>
-              </div>
-              <div class="col-md-6">
-                <h3 class="h4 mb-0">
-                  Microsoft Office PowerPoint
-                </h3>
-                <p class="pt-2 pt-md-3 mb-md-0">
-                  Course Description
-                </p>
-              </div>
-              <div class="col-md-3 text-md-end">
-                <div class="d-inline-flex">
-                  <div class="bg-light flex-shrink-0 rounded-circle position-relative zindex-4" style="padding: 3px;">
-                    <img class="rounded-circle" src="assets/img/avatar/05.jpg" width="48" alt="Avatar">
-                  </div>
-                </div>
-              </div>
-            </div>
-            <hr>
-            <div class="row py-3 my-2 my-md-3">
-              <div class="col-md-3">
-                <div class="h6 mb-2 mb-md-0">Programming</div>
-              </div>
-              <div class="col-md-6">
-                <h3 class="h4 mb-0">
-                  Coding & Robotics for Children
-                </h3>
-                <p class="pt-2 pt-md-3 mb-md-0">
-                  Course Description
-                </p>
-              </div>
-              <div class="col-md-3 text-md-end">
-                <div class="d-inline-flex">
-                  <div class="bg-light flex-shrink-0 rounded-circle position-relative zindex-4" style="padding: 3px;">
-                    <img class="rounded-circle" src="assets/img/avatar/05.jpg" width="48" alt="Avatar">
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="row py-3 my-2 my-md-3">
-              <div class="col-md-3">
-                <div class="h6 mb-2 mb-md-0">Information Technology (IT)</div>
-              </div>
-              <div class="col-md-6">
-                <h3 class="h4 mb-0">
-                  Basic Computer Skills (the Windows OS)
-                </h3>
-                <p class="pt-2 pt-md-3 mb-md-0">
-                  Course Description
-                </p>
-              </div>
-              <div class="col-md-3 text-md-end">
-                <div class="d-inline-flex">
-                  <div class="bg-light flex-shrink-0 rounded-circle position-relative zindex-4" style="padding: 3px;">
-                    <img class="rounded-circle" src="assets/img/avatar/05.jpg" width="48" alt="Avatar">
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="row py-3 my-2 my-md-3">
-              <div class="col-md-3">
-                <div class="h6 mb-2 mb-md-0">Engineering/CAD Work</div>
-              </div>
-              <div class="col-md-6">
-                <h3 class="h4 mb-0">
-                  AutoCAD
-                </h3>
-                <p class="pt-2 pt-md-3 mb-md-0">
-                  Course Description
-                </p>
-              </div>
-              <div class="col-md-3 text-md-end">
-                <div class="d-inline-flex">
-                  <div class="bg-light flex-shrink-0 rounded-circle position-relative zindex-4" style="padding: 3px;">
-                    <img class="rounded-circle" src="assets/img/avatar/05.jpg" width="48" alt="Avatar">
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="row py-3 my-2 my-md-3">
-              <div class="col-md-3">
-                <div class="h6 mb-2 mb-md-0">Engineering/CAD Work</div>
-              </div>
-              <div class="col-md-6">
-                <h3 class="h4 mb-0">
-                  Autodesk Revit
-                </h3>
-                <p class="pt-2 pt-md-3 mb-md-0">
-                  Course Description
-                </p>
-              </div>
-              <div class="col-md-3 text-md-end">
-                <div class="d-inline-flex">
-                  <div class="bg-light flex-shrink-0 rounded-circle position-relative zindex-4" style="padding: 3px;">
-                    <img class="rounded-circle" src="assets/img/avatar/05.jpg" width="48" alt="Avatar">
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
       <!-- GALLERY -->
       <section class="container py-5 my-lg-3 my-xl-4 my-xxl-5" id="gallery-section">
         <div class="py-2 py-sm-3 py-md-4 my-md-2 my-xxl-3">
@@ -684,6 +581,26 @@
         </div>
       </section>
 
+      <!-- PARTNERS -->
+      <section class="pb-md-2 pt-lg-2 pb-lg-4 py-xl-4 py-xxl-5" id="partners">
+        <div class="container py-5">
+          <h2 class="h1 text-center pb-sm-2 py-md-3 mt-sm-2 mb-lg-4">Partners With</h2>
+          <div class="mb-4 mb-lg-5 pb-3 px-3" data-simplebar>
+            <div class="row row-cols-lg-4 flex-nowrap flex-lg-wrap gy-lg-5 mx-n3 justify-content-center">
+              <div class="col text-center" style="min-width: 225px;">
+                <img class="d-block d-dark-mode-none mb-2 mb-lg-2 mx-auto" src="assets/img/landing/conference/sponsors/ez-01.svg" alt="Logo" width="200">
+                <img class="d-none d-dark-mode-block mb-2 mb-lg-2 mx-auto" src="assets/img/landing/conference/sponsors/ez-02.svg" alt="Logo" width="200">
+              </div>
+            </div>
+          </div>
+          <div class="text-center mb-2 mb-sm-3">
+            <a class="btn btn-lg btn-primary" href="#contact-section" data-scroll data-scroll-offset="120">
+              Become a Partner
+            </a>
+          </div>
+        </div>
+      </section>
+
       <!-- CONTACT FORM -->
       <section class="bg-primary ignore-dark-mode position-relative py-5" id="contact-section">
         <div class="bg-dark position-absolute top-0 start-0 w-100 h-100 opacity-5"></div>
@@ -721,12 +638,13 @@
     </main>
     
     <!-- FOOTER -->
-    <footer class="footer bg-secondary py-5">
+    <footer class="footer py-5" id="footer">
       <div class="container pt-1 pt-sm-2 pt-md-3 pt-lg-4 pt-xl-5">
         <div class="border-bottom text-center pb-4">
           <a class="navbar-brand d-inline-flex text-nav py-0 mb-3 mb-md-4" href="/">
             <span class="text-primary flex-shrink-0 me-2">
-              <img src="assets/img/logos/logo_full_color.svg" alt="" width="150">
+              <img class="d-block d-dark-mode-none" src="assets/img/logos/logo_full_color.svg" alt="" width="150">
+              <img class="d-none d-dark-mode-block" src="assets/img/logos/logo_full_white.svg" alt="" width="150">
             </span>
           </a>
           <ul class="nav justify-content-center py-1 pb-sm-2">
@@ -1002,6 +920,41 @@
         .catch(error => {
           console.error('Error fetching quote:', error);
         });
+    </script>
+
+    <!-- HEADER COLOR -->
+    <script>
+      const themeModeCheckbox = document.getElementById('theme-mode');
+      const headerEl = document.getElementById('header');
+      const footerEl = document.getElementById('footer');
+      const partnersEl = document.getElementById('partners');
+      const dailyQuoteSectionEl = document.getElementById('daily-quote');
+
+      if (themeModeCheckbox.checked) {
+        headerEl.style.backgroundColor = '#303134';
+        footerEl.style.backgroundColor = '#303134';
+        partnersEl.style.backgroundColor = '#303134';
+        dailyQuoteSectionEl.style.backgroundColor = '#303134';
+      } else {
+        headerEl.style.backgroundColor = '#f2f2f2';
+        footerEl.style.backgroundColor = '#f2f2f2';
+        partnersEl.style.backgroundColor = '#f2f2f2';
+        dailyQuoteSectionEl.style.backgroundColor = '#f2f2f2';
+      }
+
+      themeModeCheckbox.addEventListener('click', (e) => {
+        if (e.target.checked) {
+          headerEl.style.backgroundColor = '#303134';
+          footerEl.style.backgroundColor = '#303134';
+          partnersEl.style.backgroundColor = '#303134';
+          dailyQuoteSectionEl.style.backgroundColor = '#303134';
+        } else {
+          headerEl.style.backgroundColor = '#f2f2f2';
+          footerEl.style.backgroundColor = '#f2f2f2';
+          partnersEl.style.backgroundColor = '#f2f2f2';
+          dailyQuoteSectionEl.style.backgroundColor = '#f2f2f2';
+        }
+      })
     </script>
   </body>
 
